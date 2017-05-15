@@ -1191,6 +1191,7 @@ class Synapse::ConfigGenerator
       end
 
       log.info "synapse: reconfigured haproxy via #{socket_file_path}"
+      @restart_required = true
     end
 
     # writes the config
